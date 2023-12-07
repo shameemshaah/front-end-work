@@ -1,0 +1,172 @@
+/* for Caption in carousel 1 */
+.carousel-caption {
+  font-size: 16px;
+  position: absolute;
+  right:50%;
+  transform: translateY(-100%);
+  padding: 10px;
+  color: black;
+  align-items: center;
+}
+
+/* for carousel 1 */
+.caro1{
+  object-fit: cover;
+  height: auto;
+}
+
+/* for buttons */
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* for Seperation lines */
+.line p{
+text-align: center;
+justify-content: center;
+margin: 0%;
+}
+
+.line2 {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.line2::before,
+.line2::after {
+  flex: 1;
+  content: '';
+  padding: 1px;
+  background-color: black;
+  margin: 50px;
+}
+
+/* for Container 6 */
+.card2 {
+  gap: 0 10px;
+}
+
+/* for Container 1 */
+.img1{
+  background-image: url(./images/image-6.jpg);
+}
+.img2{
+  background-image: url(./images/image-7.jpg);
+}
+.img3{
+  background-image: url(./images/image-8.jpg);
+}
+.discover{
+  max-width: 1000px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-around;
+  padding: 10px;
+  transform: translateY(-15%);
+}
+.discover-item{
+  width: 40%;
+  height: 250px;
+  margin: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+.discover-title{
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* for Container 6,8 */
+
+.row a{
+text-decoration: none;
+color: gold;
+}
+.row.disc button, .row.blog button{
+color: black;
+background-color: white;
+border: 0cap;
+}
+
+/* for footer */
+
+footer{
+background-color: black;
+padding: 20px;
+}
+.foot{
+color: rgb(81, 78, 78);
+}
+
+/* for Container 9 */
+
+.disc{
+display: grid;
+justify-content: center;
+align-items: center;
+justify-items: center;
+
+}
+
+/* for Container 2 */
+.row.image-container{
+padding: 0rem 20.5rem;
+}
+
+/* for Responsive */
+
+@media(max-width:1524px){
+.row.image-container{
+  padding: 0rem 10rem;
+}
+.caro1{
+  height: 40rem;
+}
+}
+
+@media(max-width:990px) {
+.row.image-container{
+  padding: 0rem 2.5rem;
+}
+.nav{
+background-color: red;
+}
+.caro1{
+  height: 30rem;
+}
+}
+@media(max-width:768px){
+.caro1{
+  height: 22.5rem;
+}
+.carousel-caption{
+  transform: translate(0);
+}
+}
+@media(max-width:590px){
+  .carousel-caption  {
+    font-size: 8px;
+  }
+  .carousel-caption button{
+    font-size: 8px;
+  }
+  .carousel-caption h3{
+    font-size: 8px;
+  }
+  .caro1{
+    height: 12.5rem;
+  }
+}
